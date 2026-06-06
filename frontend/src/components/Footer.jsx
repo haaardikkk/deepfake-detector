@@ -10,8 +10,8 @@ const QUICK_LINKS = [
 ];
 
 const SOCIAL_LINKS = [
-  { icon: Github,   href: 'https://github.com/haaardikkk', target="_blank",  label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/haaardikkk', target = "_blank",label: 'LinkedIn' },
+  { icon: Github,   href: 'https://github.com/haaardikkk', target: "_blank",  label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/haaardikkk', target: "_blank", label: 'LinkedIn' },
 ];
 
 const CURRENT_YEAR = new Date().getFullYear();
