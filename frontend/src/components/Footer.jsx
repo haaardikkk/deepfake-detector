@@ -6,13 +6,12 @@ import Logo from './Logo';
 const QUICK_LINKS = [
   { label: 'Features',         href: '#features' },
   { label: 'About',            href: '#about' },
-  { label: 'GitHub',           href: 'https://github.com' },
+  { label: 'GitHub',           href: 'https://github.com/haaardikkk' },
 ];
 
 const SOCIAL_LINKS = [
-  { icon: Github,   href: 'https://github.com',   label: 'GitHub' },
-  { icon: Twitter,  href: 'https://twitter.com',  label: 'Twitter' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { icon: Github,   href: 'https://github.com/haaardikkk',   label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/haaardikkk', label: 'LinkedIn' },
 ];
 
 const CURRENT_YEAR = new Date().getFullYear();
@@ -83,7 +82,7 @@ const Footer = () => (
         <p className="text-slate-500 text-xs sm:text-sm flex items-center gap-1.5">
           <span>Built with</span>
           <Heart className="w-3.5 h-3.5 text-red-500 fill-current" aria-hidden="true" />
-          <span>React & FastAPI</span>
+          <span>by Hardikk</span>
         </p>
       </div>
     </motion.div>
