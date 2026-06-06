@@ -5,6 +5,5 @@ torchvision
 pillow
 numpy
 opencv-python
-mediapipe
 python-multipart
 grad-cam

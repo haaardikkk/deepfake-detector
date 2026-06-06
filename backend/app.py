@@ -19,9 +19,14 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="DeepFake Detector API", version="2.0.0")
 
+import os
+
+frontend_urls = os.environ.get("FRONTEND_URL", "http://localhost:3000,http://localhost:5173").split(",")
+origins = [url.strip() for url in frontend_urls if url.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -30,7 +35,12 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"status": "running"}
+    return {"status": "running", "service": "deepfake-detector"}
+
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
 
 
 @app.post("/predict")
