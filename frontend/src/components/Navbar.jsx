@@ -85,7 +85,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                href="https://github.com"
+                href="https://github.com/haaardikkk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-3 flex items-center gap-2 glass px-4 py-2 rounded-xl hover:bg-white/[0.08] transition-colors text-sm font-medium text-slate-300 hover:text-white"
